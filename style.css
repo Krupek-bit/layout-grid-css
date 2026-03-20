@@ -26,3 +26,26 @@ nav a {
 nav a:hover {
   color: yellow;
 }
+
+nav a::before {
+  content: "➤ ";
+  color: orange;
+}
+
+header {
+  animation: slideDown 1s;
+}
+
+main {
+  animation: fadeIn 2s;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
