@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr 60px;
+  height: 100vh;
+}
+
+header { grid-area: header; }
+nav { grid-area: menu; }
+main { grid-area: content; }
+footer { grid-area: footer; }
+
+nav {
+  background: #555;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellow;
+}
